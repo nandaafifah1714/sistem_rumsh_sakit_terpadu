@@ -1,7 +1,8 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { AgentType, IntentResponse, GroundingSource } from "../types";
 
-const apiKey = process.env.API_KEY || '';
+// Safe access to API Key to prevent crash if process is undefined
+const apiKey = (typeof process !== 'undefined' && process.env && process.env.API_KEY) || '';
 const ai = new GoogleGenAI({ apiKey });
 
 // Helper to validate if API Key is present
