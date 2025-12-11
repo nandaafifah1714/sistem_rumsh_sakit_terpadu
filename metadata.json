@@ -1,0 +1,5 @@
+{
+  "name": "Sistem Rumah Sakit Terpadu",
+  "description": "Asisten AI rumah sakit terpadu dengan koordinator pusat dan agen spesialis (Info Pasien, Dokumen, Visual, Riset).",
+  "requestFramePermissions": []
+}
